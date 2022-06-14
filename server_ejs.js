@@ -1,12 +1,15 @@
 const express = require('express');
-
 const app = express();
 const port = 8000
 
-// simple middleware example -- print time for every request, then continue
-app.use((req, res, next) => {
-  console.log('Time: ', Date.now());
-  next();
+app.set('view engine', 'ejs');
+
+app.get('/home', (req, res) => {
+  let animals = [
+    { name: 'Alligator' },
+    { name: 'Crocodile' }
+  ];
+  res.render('home', { animals: animals });
 });
 
 app.get('/', (req, res) => {
