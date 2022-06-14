@@ -12,8 +12,8 @@ app.get('/home', (req, res) => {
     { name: 'Crocodile' }
   ];
   res.render('home', { animals: animals });
+  // res.send(animals[0])
 });
-
 
 // app.get('/home', (req, res) => {
 //   res.render('home', { animal: 'Alligator' });
