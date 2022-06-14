@@ -32,11 +32,6 @@
         {{/animals}}
         </ul>
 
-## Marko
-
-
-
-
 ## Notes:
 
 An oft-mentioned challenge is making sure data from the user that may be
