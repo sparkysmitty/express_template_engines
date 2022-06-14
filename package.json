@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/sparkysmitty/express_template_engines/issues"
   },
-  "homepage": "https://github.com/sparkysmitty/express_template_engines#readme"
+  "homepage": "https://github.com/sparkysmitty/express_template_engines#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
