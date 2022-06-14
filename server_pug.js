@@ -5,7 +5,11 @@ const port = 8000
 app.set('view engine', 'pug');
 
 app.get('/home', (req, res) => {
-  res.render('home', { animal: 'Alligator' });
+  let animals = [
+    { name: 'Alligator' },
+    { name: 'Crocodile' }
+  ];
+  res.render('home', { animals: animals });
 });
 
 app.get('/', (req, res) => {

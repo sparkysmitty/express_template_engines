@@ -1,2 +1,8 @@
-<h2>This is the {{ animal }} home page</h2>
-<p>It's a test view of Mustache</p>
+<h2>This is the Mustache sample page</h2>
+<p>It's a test view provided with an array:</p>
+
+<ul>
+{{#.}}
+  <li>{{animal.name}}</li>
+{{/.}}
+</ul>

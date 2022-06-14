@@ -1,2 +1,9 @@
-h2 This is the home page
-p It's a test view using Pug 
+h2 This is the Pug sample page
+p It's a test view provided with an array: 
+
+ul
+  for animal in animals
+    li= animal.name
+
+//- a single animal:
+//- div #{animal}
