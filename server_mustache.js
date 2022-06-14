@@ -1,16 +1,17 @@
 const express = require('express');
-
 const app = express();
 const port = 8000
 
-// simple middleware example -- print time for every request, then continue
-app.use((req, res, next) => {
-  console.log('Time: ', Date.now());
-  next();
+const mustacheExpress = require('mustache-express');
+app.engine('mustache', mustacheExpress());
+app.set('view engine', 'mustache');
+
+app.get('/home', (req, res) => {
+  res.render('home', { animal: 'Alligator' });
 });
 
 app.get('/', (req, res) => {
-  res.send('Successful response.');
+  res.send('Successful response.  No Mustache usage, though.');
 });
 
 app.listen(port, () => {

@@ -13,7 +13,7 @@ app.get('/home', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.send('Successful response.');
+  res.send('Successful response.  No EJS usage, though.');
 });
 
 app.listen(port, () => {
