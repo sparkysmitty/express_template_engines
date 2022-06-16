@@ -34,7 +34,12 @@
 
 ## Eta
 
-
+        <ul id="animals">
+          <% it.animals.forEach(function(animal){ %>
+            <% /* Eta automatically escapes interpolations */ %>
+            <li><%= animal.name %></li>
+          <% }) %>
+        </ul>
 
 ## Notes:
 

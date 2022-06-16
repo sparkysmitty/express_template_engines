@@ -1,7 +1,10 @@
 <h2>This is the Eta sample page</h2>
 <p>It's a test view provided with an array:</p>
-<ul>
-<% animals.forEach(function(animal){ %>
-  <li><%= animal.name %></li>
-<% }) %>
+<ul id="animals">
+  <% it.animals.forEach(function(animal){ %>
+    <% /* Note that we can simply put the HTML tags inside the string,
+          rather than escaping them with &lt; and &gt;
+          This is because Eta automatically escapes interpolations */ %>
+    <li><%= animal.name %></li>
+  <% }) %>
 </ul>
