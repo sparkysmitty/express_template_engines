@@ -1,0 +1,7 @@
+<h2>This is the Eta sample page</h2>
+<p>It's a test view provided with an array:</p>
+<ul>
+<% animals.forEach(function(animal){ %>
+  <li><%= animal.name %></li>
+<% }) %>
+</ul>

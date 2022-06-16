@@ -32,6 +32,10 @@
         {{/animals}}
         </ul>
 
+## Eta
+
+
+
 ## Notes:
 
 An oft-mentioned challenge is making sure data from the user that may be
@@ -44,4 +48,6 @@ I was going to try out Marko, but it's way more than just a templating language 
 This is an interesting read on how the author of express-handlebars explains his rationale for building it: https://github.com/express-handlebars/express-handlebars
 
 The default location for express is a physical "views" directory that is logically referred to as "home" (go figure).
+
+There are so many different templating engines out there, that there is another effort called consolidate.js (https://github.com/tj/consolidate.js) that is an effort to create a universal wrapper (somewhat unsuccesfully, based on how it is maintained).
 
